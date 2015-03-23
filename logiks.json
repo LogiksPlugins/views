@@ -15,7 +15,9 @@
     "private": false,
     "permissions": "",
     "dependencies": {
-        "core": "*",
+        "core": {
+		"max": "3.6.3"
+	}
     },
     "directoryMap": {
         "installer": ".install"
