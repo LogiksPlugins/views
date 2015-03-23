@@ -1,0 +1,46 @@
+.templateForm ul {
+	list-style:none;
+	margin:5px;margin-left:-25px;
+	font-size:14px;
+}
+.templateForm ul li.titleCol {
+	font-weight:bold;
+	margin-bottom:4px;
+}
+.templateForm ul li.inputCol {
+	margin-left:20px;
+	margin-bottom:8px;
+}
+.templateForm ul li .h4,.templateForm ul li h5,.templateForm ul li h6 {
+	margin:0px;padding:0px;
+	color:#999;
+	text-align:left;
+	text-transform:uppercase;
+}
+.templateForm select {
+	height:23px;
+	width:90%;
+	height:22px;
+}
+.templateForm input[type=text] {
+	border:1px solid #aaa;
+	width:90%;
+}
+h2.error {margin:auto;margin-top:50px;color:maroon;}
+
+
+.templateForm .datefield {
+	cursor:default;
+	text-align:center;
+	background: #fff url(images/date.png) no-repeat;
+	background-position: right;
+}
+.templateForm .autocomplete {
+	cursor:default;
+	text-align:left;
+	background: #fff url(images/autocomplete.png) no-repeat;
+	background-position: right;
+}
+.templateForm .required {
+	background:#FFE7E0;
+}

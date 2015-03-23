@@ -1,0 +1,34 @@
+{
+    "name": "views",
+    "version": "1.0.0",
+    "status": "",
+    "package":"views",
+    "type": "module",
+    "app": "*",
+    "privilege": "*",
+    "description": "For showing of template based reports that are printable",
+    "keywords": "logiks,modules,views",
+    "license": "MIT",
+    "marketid": "",
+    "homepage": "https://github.com/LogiksPlugins/views",
+    "bugs": "https://github.com/LogiksPlugins/views/issues",
+    "private": false,
+    "permissions": "",
+    "dependencies": {
+        "core": "*",
+    },
+    "directoryMap": {
+        "installer": ".install"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/LogiksPlugins/views.git"
+    },
+    "authors": [
+        {
+            "name": "OpenLogiks Team",
+            "email": "admin@openlogiks.org",
+            "authorid":"olgksadmin"
+        }
+    ]
+}
