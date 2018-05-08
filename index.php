@@ -13,7 +13,7 @@ if(isset($_REQUEST['src']) && strlen($_REQUEST['src'])>0) {
 	$viewConfig=findView($_REQUEST['src']);
 	
 	if($viewConfig) {
-    printView($viewConfig,$viewConfig['dbkey'],[]);
+    printView($viewConfig,[]);
 	} else {
 		echo "<h1 class='errormsg'>Sorry, View '{$_REQUEST['src']}' not found.</h1>";
 	}
