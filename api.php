@@ -9,9 +9,22 @@ if(!function_exists("findView")) {
 		}
 
 		$fsArr=[
-				$file,
-				APPROOT.APPS_MISC_FOLDER."views/{$file}/view.json",
-			];
+        $file,
+        APPROOT.APPS_MISC_FOLDER."views/{$file}/view.json",
+      ];
+    
+    if(isset($_REQUEST['forSite']) && defined("CMS_SITENAME")) {
+      $fsArr[]=ROOT."apps/".CMS_SITENAME."/".APPS_MISC_FOLDER."views/{$file}.json";
+    }
+    
+    $fArr = explode("/",$file);
+    if(count($fArr)>1) {
+      $fPath = checkModule($fArr[0]);
+      if($fPath) {
+        unset($fArr[0]);
+        $fsArr[] = dirname($fPath)."/views/".implode("/",$fArr).".json";
+      }
+    }
 
 		$file=false;
 		foreach ($fsArr as $fs) {
