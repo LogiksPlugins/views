@@ -81,6 +81,13 @@ if(!function_exists("findView")) {
 			trigger_logikserror("Corrupt view defination");
 			return false;
 		}
+    if(isset($viewConfig['policy']) && strlen($viewConfig['policy'])>0) {
+      $allow=checkUserPolicy($viewConfig['policy']);
+      if(!$allow) {
+        trigger_logikserror("Sorry, you are not allowed to access this view");
+        return false;
+      }
+    }
     
     if($params==null) $params=[];
 		$viewConfig=array_merge($viewConfig,$params);
